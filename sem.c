@@ -22,6 +22,7 @@ int main()
     key_t key_sem;//sem_key
     char *data,*point;//pointers for the shared memory    
     key = ftok ("sem.c", 'Y');//random inputs for 2nd argument kind for a unique key generation.
+    key_sem = ftok ("sem.c", 'X');//random inputs for 2nd argument kind for a unique key generation.
     printf("\n             /*************************\n             *  NetProg Lab Assign. 5 *\n             *     Vaibhav Kashyap    *\n             *      2012A3PS143P      *\n             *************************/\n");    
     proc[0]=getpid();//parent process   
     printf("************ %d is the Parent process ************\n",getpid());//Declaring parent process
